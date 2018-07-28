@@ -9,7 +9,7 @@
               <div class="body">
                 <h5><%= tarea.name%></h5>
                 <% if @todo.find_by(tarea: tarea)%>
-                  <%= link_to "Completar", tarea_user_tasks_path(tarea), class: 'btn btn-danger', method: :post%>
+                  <%= link_to "Descompletar", tarea_user_tasks_path(tarea), class: 'btn btn-danger', method: :post%>
                 <% else%>
                   <%= link_to "Completar", tarea_user_tasks_path(tarea), class: 'btn btn-success', method: :post%>
                 <% end%>
