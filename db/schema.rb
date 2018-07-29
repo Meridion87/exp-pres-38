@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_07_28_010738) do
+ActiveRecord::Schema.define(version: 2018_07_28_001751) do
 
   create_table "tareas", force: :cascade do |t|
     t.string "name"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2018_07_28_010738) do
   create_table "user_tasks", force: :cascade do |t|
     t.integer "user_id"
     t.integer "tarea_id"
-    t.boolean "completada"
+    t.boolean "completada", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["tarea_id"], name: "index_user_tasks_on_tarea_id"
