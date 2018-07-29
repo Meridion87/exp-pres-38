@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :tareas, only: :index do
+  resources :tareas, only: [:index, :show] do
     resources :user_tasks, only: [:create, :update]
   end
 
-  resources :user_task, only: :index
+  resources :user_task, only: [:index]
 
   root to: 'tareas#index'
 

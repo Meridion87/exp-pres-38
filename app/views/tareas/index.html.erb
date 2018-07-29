@@ -1,24 +1,25 @@
 
-  <div class="container">
-    <div class="row">
-      <% @tareas.each_slice(3) do |row| %>
-      <%row.each do |tarea| %>
-        <div class="col">
-          <div class="card">
-            <%= image_tag tarea.photo, class: 'card-img-top'%>
-              <div class="body">
-                <h5><%= tarea.name%></h5>
-                <% if @todo.find_by(tarea: tarea)%>
-                  <%= link_to "Descompletar", tarea_user_tasks_path(tarea), class: 'btn btn-danger', method: :post%>
-                <% else%>
-                  <%= link_to "Completar", tarea_user_tasks_path(tarea), class: 'btn btn-success', method: :post%>
-                <% end%>
+<div class="container">
+  <div class="row">
+    <% @tareas.each_slice(3) do |row| %>
+    <%row.each do |tarea| %>
+      <div class="col">
+        <div class="card">
+          <%= image_tag tarea.photo, class: 'card-img-top'%>
+            <div class="body">
+              <h5><%= link_to tarea.name, tarea_path(tarea)%></h5>
+              <% if @todo.find_by(tarea: tarea)%>
+                <%= @todo.find_by(tarea: tarea).completada%>
+                <%= link_to "Descompletar", tarea_user_tasks_path(tarea), class: 'btn btn-danger', method: :post%>
+              <% else%>
+                <%= link_to "Completar", tarea_user_tasks_path(tarea), class: 'btn btn-success', method: :post%>
+              <% end%>
 
-              </div>
             </div>
           </div>
-        <% end %>
-        <div class="w-100" style="margin-top:20px"> </div>
+        </div>
       <% end %>
-    </div>
+      <div class="w-100" style="margin-top:20px"> </div>
+    <% end %>
   </div>
+</div>
