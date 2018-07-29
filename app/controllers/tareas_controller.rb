@@ -7,7 +7,7 @@ class TareasController < ApplicationController
   def show
     # @tareadetalle = Tarea.find_by name: :tarea_id
     @usertask = UserTask.where(tarea: :tarea_id)
-    @id_usuario = @usertask.user_id
+    @usuariostarea = User.where(user: @usertask)
     # @usrcompletada = User.where(user: @usertask.user_id)
   end
 
