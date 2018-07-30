@@ -8,8 +8,10 @@ class TareasController < ApplicationController
     # @tareadetalle = Tarea.find_by name: :tarea_id
     @idedelatarea = params[:tarea]
     @usertask = UserTask.where(tarea: :tarea_id)
-    @usuariostarea = User.where(id: @usertask.select("user_id"))
+    @usuariostarea = User.where(id: @usertask)
     # @usrcompletada = User.where(user: @usertask.user_id)
+    # @tareascompletadas = UserTask.where(user: current_user).count
+    # @tareastotales = Tarea.all.count
   end
 
 end
