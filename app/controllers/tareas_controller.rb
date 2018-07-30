@@ -6,6 +6,7 @@ class TareasController < ApplicationController
 
   def show
     # @tareadetalle = Tarea.find_by name: :tarea_id
+    @idedelatarea = params[:tarea]
     @usertask = UserTask.where(tarea: :tarea_id)
     @usuariostarea = User.where(id: @usertask.select("user_id"))
     # @usrcompletada = User.where(user: @usertask.user_id)

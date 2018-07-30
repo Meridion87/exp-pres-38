@@ -8,13 +8,11 @@
           <%= image_tag tarea.photo, class: 'card-img-top'%>
             <div class="body">
               <h5><%= link_to tarea.name, tarea_path(tarea)%></h5>
-              <% if @todo.find_by(tarea: tarea)%>
-                <%= @todo.find_by(tarea: tarea).completada%>
+              <% if @todo.find_by(tarea: tarea) and @todo.find_by(tarea: tarea).completada%>
                 <%= link_to "Descompletar", tarea_user_tasks_path(tarea), class: 'btn btn-danger', method: :post%>
-              <% else%>
+              <% else %>
                 <%= link_to "Completar", tarea_user_tasks_path(tarea), class: 'btn btn-success', method: :post%>
               <% end%>
-
             </div>
           </div>
         </div>
