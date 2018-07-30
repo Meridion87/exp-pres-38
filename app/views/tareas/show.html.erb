@@ -1,8 +1,12 @@
+<h2> Tarea: <%= @tarea.name %></h2>
 
 <table class="table">
-  <% @usuariostarea.each do |usr| %>
   <tr>
-    <td><%= usr.name %></td>
+    <th>Tarea completada por: </th>
+  </tr>
+  <% @ut.each do |usr| %>
+  <tr>
+    <td><%= User.find_by(id: usr.user_id).name %></td>
   </tr>
   <% end %>
 </table>
