@@ -12,33 +12,33 @@ Tarea.create(
 )
 Tarea.create(
   name: 'Hacer asado',
-  photo: 'http://www.ucsc.cl/wp-content/uploads/2014/09/6002-800x475.jpg'
+  photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Argentinean_asado.jpg/1200px-Argentinean_asado.jpg'
 )
 Tarea.create(
   name: 'Jugar al trompo',
-  photo: 'http://www.ucsc.cl/wp-content/uploads/2014/09/6002-800x475.jpg'
+  photo: 'http://www.camoaradioweb.icrt.cu/images/Yudith/trompo_juegos_ninos_-cuba.jpg'
 )
 Tarea.create(
   name: 'Elevar un volantín',
-  photo: 'http://www.ucsc.cl/wp-content/uploads/2014/09/6002-800x475.jpg'
+  photo: 'http://img.eltipografo.cl/media/2016/09/Elevar-volantin.jpg'
 )
 Tarea.create(
   name: 'Participar en carrera de sacos',
-  photo: 'http://www.ucsc.cl/wp-content/uploads/2014/09/6002-800x475.jpg'
+  photo: 'https://i.pinimg.com/originals/b7/89/69/b789698c9b57703813ba50e8f75132d4.jpg'
 )
 Tarea.create(
   name: 'Jugar a la rayuela',
-  photo: 'http://www.ucsc.cl/wp-content/uploads/2014/09/6002-800x475.jpg'
+  photo: 'https://i0.wp.com/tvmaulinos.com/wp-content/uploads/2015/12/rayuela-chilena.jpg?fit=2833%2C1521'
 )
 Tarea.create(
   name: 'Comerse una empanada',
-  photo: 'http://www.ucsc.cl/wp-content/uploads/2014/09/6002-800x475.jpg'
+  photo: 'http://assets.kraftfoods.com/recipe_images/opendeploy/76266_640x428.jpg'
 )
 Tarea.create(
   name: 'Comerse un anticucho',
-  photo: 'http://www.ucsc.cl/wp-content/uploads/2014/09/6002-800x475.jpg'
+  photo: 'http://e.rpp-noticias.io/normal/2016/10/14/550055_266960.png'
 )
 Tarea.create(
   name: 'Cantar una cueca',
-  photo: 'http://www.ucsc.cl/wp-content/uploads/2014/09/6002-800x475.jpg'
+  photo: 'https://i.ytimg.com/vi/rm8CLbs0slM/maxresdefault.jpg'
 )
