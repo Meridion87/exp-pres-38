@@ -27,6 +27,6 @@ class UserTasksController < ApplicationController
   end
 
   def index
-    @user_task = current_user.user_tasks
+    @usertask = current_user.user_tasks
   end
 end
